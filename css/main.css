@@ -682,7 +682,6 @@ img {
   overflow: hidden;
 }
 
-/*------------------------------------------*/
 .backdrop {
   position: fixed;
   top: 0;
@@ -809,6 +808,7 @@ img {
   border-radius: 4px;
   padding: 12px 16px;
   resize: none;
+  /*Обращение только к плейсхолдеру, также установка стилей*/
 }
 
 .modal-form-message:focus {
@@ -817,7 +817,6 @@ img {
   transition: background-color 250ms linear;
 }
 
-/*Обращение только к плейсхолдеру, также установка стилей*/
 .modal-form-message::placeholder {
   font-family: Roboto;
   font-style: normal;
@@ -830,16 +829,6 @@ img {
 
 /*------------------------------------------*/
 /*CHECKBOX*/
-.modal-form-checkbox:checked + .modal-form-checkbox-label::before {
-  border-radius: 2px;
-  border-color: var(--background-color-modal-btn-potfolio);
-  background-image: url(../images/check.jpg);
-}
-
-.modal-form-checkbox:focus + .modal-form-checkbox-label::before {
-  outline: 1px solid var(--background-color-modal-btn-potfolio);
-}
-
 .modal-form-checkbox-label {
   display: flex;
   align-items: center;
@@ -861,6 +850,16 @@ img {
   border: 1px solid var(--color-text-section);
   cursor: pointer;
   margin-right: 9px;
+}
+
+.modal-form-checkbox:checked + .modal-form-checkbox-label::before {
+  border-radius: 2px;
+  border-color: var(--background-color-modal-btn-potfolio);
+  background-image: url(../images/check.jpg);
+}
+
+.modal-form-checkbox:focus + .modal-form-checkbox-label::before {
+  outline: 1px solid var(--background-color-modal-btn-potfolio);
 }
 
 .modal-form-label-link {
@@ -981,6 +980,10 @@ img {
   margin-right: -30px;
 }
 
+.portfolio-content .portfolio-list-content {
+  flex-basis: calc(100%/3 - 90px);
+}
+
 .portfolio-list-content {
   margin-top: 30px;
   margin-left: 30px;
@@ -993,10 +996,6 @@ img {
 .border-portfolio {
   border: 1px solid;
   border-color: var(--color-border-portfolio);
-}
-
-.portfolio-content .portfolio-list-content {
-  flex-basis: calc(100%/3 - 90px);
 }
 
 .portfolio-link {

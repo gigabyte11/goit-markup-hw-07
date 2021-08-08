@@ -53,6 +53,10 @@
     flex-wrap: wrap;
     margin-top: -30px;
     margin-right: -30px;
+
+    & .portfolio-list-content{
+        flex-basis: calc(100%/3 - 90px)
+    }
 }
 
 .portfolio-list-content{   
@@ -73,7 +77,3 @@
     border: 1px solid;
     border-color: var(--color-border-portfolio);
 }
-
-.portfolio-content .portfolio-list-content{
-    flex-basis: calc(100%/3 - 90px)
-    }
