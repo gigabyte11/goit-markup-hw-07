@@ -1,6 +1,4 @@
-
-.footer
-{
+.footer{
     background: var(--background-color-footer);
     padding-top: 60px;
     right: 252px;
@@ -12,19 +10,16 @@
     right: 252px;*/
 }
 
-.logo-footer
-{
+.logo-footer{
     font-family: Raleway; 
     font-style: normal; 
     font-weight: bold;
     font-size: 26px; 
     line-height: 1.19;
-/* identical to box height */ 
     letter-spacing: 0.03em;
     color: var(--color-text);
     text-decoration: none;
-    text-shadow: 0 4 4
-    rgba(0,0.0,0.25);
+    text-shadow: 0 4 4 rgba(0,0,0,0.25);
     text-decoration: none; /*прибирає підкреслення*/ 
 }
 .logo-footer-web
