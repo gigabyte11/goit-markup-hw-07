@@ -21,17 +21,19 @@
     border-radius: 4px;
     fill: var(--color-svg-border);
     transition: border-color 250ms linear;
+
+    &:hover,
+    &:focus{
+        fill: var(--color-text);
+        border-color: var(--color-text);
+    }
 }
 .client-icon{
     transition: fill 25ms linear;
-}
-.client-icon:hover,
-.client-icon:focus{
-    fill: var(--color-text);
-    border-color: var(--color-text);
-}
-.client-link:hover,
-.client-link:focus{
-    fill: var(--color-text);
-    border-color: var(--color-text);
+
+    &:hover,
+    &:focus{
+        fill: var(--color-text);
+        border-color: var(--color-text);
+    }
 }

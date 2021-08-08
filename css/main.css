@@ -100,10 +100,6 @@ img {
   margin-right: 50px;
 }
 
-.menu-link.current {
-  color: var(--color-text);
-}
-
 .menu-link {
   position: relative;
   font-family: Roboto;
@@ -119,6 +115,10 @@ img {
   transition: color 250ms linear;
 }
 
+.menu-link.current {
+  color: var(--color-text);
+}
+
 .menu-link.current::after {
   /*підкреслення активної сторінки*/
   content: "";
@@ -131,6 +131,10 @@ img {
   display: block;
   background: var(--background-color-modal-btn-potfolio);
   border-radius: 2px;
+}
+
+.menu-link:hover, .menu-link:focus {
+  color: var(--color-text);
 }
 
 /*Стилізація блоків меню: tел, Mайл*/
@@ -161,6 +165,10 @@ img {
   transition: color 250ms linear;
 }
 
+.mail-link:hover, .mail-link:focus {
+  color: var(--color-text);
+}
+
 .tel-link {
   display: flex;
   align-items: center;
@@ -176,30 +184,18 @@ img {
   transition: color 250ms linear;
 }
 
+.tel-link:hover, .tel-link:focus {
+  color: var(--color-text);
+}
+
 .icon-list-adress {
   margin-right: 10px;
   fill: currentColor;
   transition: color 250ms linear;
 }
 
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--color-text);
-}
-
-.icon-list-adress:hover,
-.icon-list-adress:focus {
+.icon-list-adress:hover, .icon-list-adress:focus {
   color: currentColor var(--color-text);
-}
-
-.mail-link:hover,
-.mail-link:focus {
-  color: var(--color-text);
-}
-
-.tel-link:hover,
-.tel-link:focus {
-  color: var(--color-text);
 }
 
 .section-hero {
@@ -207,7 +203,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /*background-color: #2f303a;*/
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -237,7 +232,6 @@ img {
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
-  /* identical to box height, 187% */
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -268,15 +262,6 @@ img {
   flex-basis: calc(100%/4 - 270px);
 }
 
-/*.list{
-    width: 270px;
-}
-.list:not(:last-child)
-{
-    margin-right: 30px;
-}
-
-*/
 .features-list {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -443,15 +428,14 @@ img {
   transition: background-color 250ms linear;
 }
 
+.social-network-link:hover, .social-network-link:focus {
+  background-color: var(--background-color-modal-btn-potfolio);
+  fill: var(--text-color-hero);
+}
+
 .social-network-icon {
   fill: currentColor var(--color-svg-border);
   transition: fill 250ms linear;
-}
-
-.social-network-link:hover,
-.social-network-link:focus {
-  background-color: var(--background-color-modal-btn-potfolio);
-  fill: var(--text-color-hero);
 }
 
 .section4 {
@@ -482,18 +466,16 @@ img {
   transition: border-color 250ms linear;
 }
 
-.client-icon {
-  transition: fill 25ms linear;
-}
-
-.client-icon:hover,
-.client-icon:focus {
+.client-link:hover, .client-link:focus {
   fill: var(--color-text);
   border-color: var(--color-text);
 }
 
-.client-link:hover,
-.client-link:focus {
+.client-icon {
+  transition: fill 25ms linear;
+}
+
+.client-icon:hover, .client-icon:focus {
   fill: var(--color-text);
   border-color: var(--color-text);
 }
@@ -602,8 +584,7 @@ img {
   transition: transform 250ms linear;
 }
 
-.join-link:hover,
-.join-link:focus {
+.join-link:hover, .join-link:focus {
   background-color: var(--background-color-modal-btn-potfolio);
 }
 
@@ -743,8 +724,7 @@ img {
   transition: fill 250ms linear;
 }
 
-.close-btn:hover,
-.close-btn:focus {
+.close-btn:hover, .close-btn:focus {
   fill: var(--color-text);
 }
 
@@ -938,8 +918,7 @@ img {
   transition: color 250ms, background-color 250ms;
 }
 
-.modal-btn-portfolio:hover,
-.modal-btn-portfolio:focus {
+.modal-btn-portfolio:hover, .modal-btn-portfolio:focus {
   color: var(--text-color-hero);
   background: var(--color-text);
 }
@@ -1007,14 +986,13 @@ img {
   margin-left: 30px;
 }
 
+.portfolio-list-content:hover, .portfolio-list-content:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .border-portfolio {
   border: 1px solid;
   border-color: var(--color-border-portfolio);
-}
-
-.portfolio-list-content:hover,
-.portfolio-list-content:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-content .portfolio-list-content {

@@ -40,18 +40,18 @@
     line-height: 20px;
     letter-spacing: 0.03em;
 
+    &::placeholder {
+        display: flex;
+        font-family: Roboto;
+        padding: 16px 0px;
+        font-size: 16px;
+        align-items: center;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255,0.6 );
+    }
 }
-.input-form-send::placeholder {
-    display: flex;
-    font-family: Roboto;
-    padding: 16px 0px;
-    font-size: 16px;
-    align-items: center;
-    line-height: 20px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255,0.6 );
-    
-}
+
 .button-send {
     display: flex;
     width: 200px;

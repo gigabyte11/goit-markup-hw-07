@@ -21,8 +21,7 @@
 .team-item{
     padding: 30px 0px;
 }
-.section-our-team
-{
+.section-our-team {
     font-family: Roboto; 
     font-style: normal; 
     font-weight: 500; 
@@ -33,9 +32,7 @@
     color: var(--color-text-section);
     margin-bottom: 10px;
 }
-.section-profession
-{
-    
+.section-profession {
     font-family: Roboto; 
     font-style: normal; 
     font-weight: normal; 
@@ -64,13 +61,14 @@
     fill: var(--color-svg-border);
     border-radius: 50%;
     transition: background-color 250ms linear;
+
+    &:hover,
+    &:focus{
+        background-color: var(--background-color-modal-btn-potfolio);
+        fill: var(--text-color-hero);
+    }
 }
 .social-network-icon{
     fill: currentColor var(--color-svg-border);
     transition: fill 250ms linear;
-}
-.social-network-link:hover,
-.social-network-link:focus{
-    background-color: var(--background-color-modal-btn-potfolio);
-    fill: var(--text-color-hero);
 }
