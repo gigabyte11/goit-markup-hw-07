@@ -87,20 +87,20 @@ img {
   /*прибирає підкреслення*/
 }
 
-.logo-web {
+.logo__web {
   color: var(--color-text);
 }
 
-.logo-s {
+.logo__s {
   color: var(--color-text-logo);
 }
 
 /*Стилізація блокім меню: Студія,Потфоліо...*/
-.list-menu:not(:last-child) {
+.list__menu:not(:last-child) {
   margin-right: 50px;
 }
 
-.menu-link {
+.menu__link {
   position: relative;
   font-family: Roboto;
   font-style: normal;
@@ -115,11 +115,11 @@ img {
   transition: color 250ms linear;
 }
 
-.menu-link.current {
+.menu__link.current {
   color: var(--color-text);
 }
 
-.menu-link.current::after {
+.menu__link.current::after {
   /*підкреслення активної сторінки*/
   content: "";
   position: absolute;
@@ -133,7 +133,7 @@ img {
   border-radius: 2px;
 }
 
-.menu-link:hover, .menu-link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--color-text);
 }
 
@@ -143,14 +143,14 @@ img {
   align-items: center;
 }
 
-.list-adress {
+.list__adress {
   list-style: none;
   /*прибирає точки в списку*/
   margin-right: auto;
   transition: color 250ms linear;
 }
 
-.mail-link {
+.mail__link {
   display: flex;
   align-items: center;
   margin-left: 305px;
@@ -165,11 +165,11 @@ img {
   transition: color 250ms linear;
 }
 
-.mail-link:hover, .mail-link:focus {
+.mail__link:hover, .mail__link:focus {
   color: var(--color-text);
 }
 
-.tel-link {
+.tel__link {
   display: flex;
   align-items: center;
   margin-left: 30px;
@@ -184,17 +184,17 @@ img {
   transition: color 250ms linear;
 }
 
-.tel-link:hover, .tel-link:focus {
+.tel__link:hover, .tel__link:focus {
   color: var(--color-text);
 }
 
-.icon-list-adress {
+.header__icon-list-adress {
   margin-right: 10px;
   fill: currentColor;
   transition: color 250ms linear;
 }
 
-.icon-list-adress:hover, .icon-list-adress:focus {
+.header__icon-list-adress:hover, .header__icon-list-adress:focus {
   color: currentColor var(--color-text);
 }
 

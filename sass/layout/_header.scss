@@ -34,20 +34,20 @@
     text-shadow: 0 4 4 rgba(0,0,0,0.25);
     text-decoration: none; /*прибирає підкреслення*/
     }
-.logo-web
+.logo__web
 {
     color: var(--color-text);
 }
-.logo-s
+.logo__s
 {
     color: var(--color-text-logo);
 }
 /*Стилізація блокім меню: Студія,Потфоліо...*/
-.list-menu:not(:last-child){
+.list__menu:not(:last-child){
     margin-right: 50px;
 }
 
-.menu-link{
+.menu__link{
     position: relative;
     font-family: Roboto; 
     font-style: normal; 
@@ -88,13 +88,13 @@
     display: flex;
     align-items: center;
 }
-.list-adress
+.list__adress
 {
     list-style: none; /*прибирає точки в списку*/
     margin-right: auto;
     transition: color 250ms linear;
 }
-.mail-link{
+.mail__link{
     display: flex;
     align-items: center;
     margin-left: 305px;
@@ -114,7 +114,7 @@
         color: var(--color-text);
     }
 }
-.tel-link{   
+.tel__link{   
     display: flex;
     align-items: center;
     margin-left: 30px;
@@ -135,7 +135,7 @@
     }
 }
 
-.icon-list-adress{
+.header__icon-list-adress{
     margin-right: 10px;
     fill: currentColor;
     transition: color 250ms linear;
